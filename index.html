@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab №1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="hat">
+
+        <div id="itmo">ИТМО</div>
+        <div id="name">Зуев Никита Александрович</div>
+        <div id="group">Группа: P32111</div>
+        <div id="variant">Вариант: 1306</div>
+    </div>
+
+    <div id="interact">
+        <div id="form-div">
+            <form id="form">
+                <div id="buttons-container">
+                    <p>Величина R</p>
+                    <input class="r-button" name="R-1" type="button" value="1">
+                    <input class="r-button" name="R-2" type="button" value="1.5">
+                    <input class="r-button" name="R-3" type="button" value="2">
+                    <input class="r-button" name="R-4" type="button" value="2.5">
+                    <input class="r-button" name="R-5" type="button" value="3">
+                </div>
+                <div id="text-container">
+                    <p>Координаты по Y</p>
+                    <input name="Y-value" type="text" placeholder="-5..5">
+                </div>
+                <div id="checkbox-container">
+                    <p>Координаты по X</p>
+                    <input class="checkbox-input" name="first" type="checkbox" name="X-value" value="-5">-5
+                    <input class="checkbox-input" type="checkbox" name="X-value" value="-4">-4
+                    <input class="checkbox-input" type="checkbox" name="X-value" value="-3">-3
+                    <input class="checkbox-input" type="checkbox" name="X-value" value="-2">-2
+                    <input class="checkbox-input" type="checkbox" name="X-value" value="-1">-1
+                    <input class="checkbox-input" type="checkbox" name="X-value" value="0">0
+                    <input class="checkbox-input" type="checkbox" name="X-value" value="1">1
+                    <input class="checkbox-input" type="checkbox" name="X-value" value="2">2
+                    <input class="checkbox-input" type="checkbox" name="X-value" value="3">3
+                </div>
+
+                <input class="submit-button" type="submit" value="Отправить">
+
+
+            </form>
+        </div>
+
+
+        <div id="picture">
+            <img src="graph.png" width="400px" height="400px" alt="The picture must be here">
+        </div>
+
+
+    </div>
+
+    <div id="table_container">
+        <div class="table_row" name="head">
+            <div class="table_cell">Результат</div>
+            <div class="table_cell">R</div>
+            <div class="table_cell">X</div>
+            <div class="table_cell">Y</div>
+            <div class="table_cell">Текущее время</div>
+            <div class="table_cell">Время исполнения</div>
+        </div>
+        <div id="table"></div>
+    </div>
+</body>
+<script src="form_handler.js"></script>
+
+</html>
